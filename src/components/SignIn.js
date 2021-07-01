@@ -9,8 +9,25 @@ function SignIn() {
 	};
 
 	return (
-		<div>
-			<button onClick={signInWithGoogle}>Sign in with Google</button>
+		<div
+			style={{
+				display: 'flex',
+				justifyContent: 'center',
+				height: '100vh',
+				alignItems: 'center',
+			}}
+		>
+			<button
+				style={{
+					padding: '30px',
+					fontSize: '20px',
+					borderRadius: '0',
+					fontWeight: '600',
+				}}
+				onClick={signInWithGoogle}
+			>
+				Sign in with Google
+			</button>
 		</div>
 	);
 }

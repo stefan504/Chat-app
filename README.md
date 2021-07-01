@@ -1,3 +1,8 @@
+# About this app
+This application is made using React, Firebase, and react-firebase-hooks. 
+Its pretty straight-forward app. Before using it it requires your to log in to your google account, after that you can join chat with many people.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

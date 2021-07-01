@@ -1,8 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import SignIn from './components/SignIn';
+import Chat from './components/Chat';
+import { auth } from './firebase';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 function App() {
-	return <div className="App">App</div>;
+	const [user] = useAuthState(auth);
+
+	return <>{user ? <Chat /> : <SignIn />}</>;
 }
 
 export default App;
